@@ -8,7 +8,7 @@ export default function Name() {
     lg:text-[5rem] lg:font-medium md:text-[3.7rem] md:font-semibold
      2xl:text-[6rem] 2xl:font-[600]">
       <span className="Name flex sm:flex-col v:flex-row
-       lg:flex-row md:flex-row 2xl:flex-row xl:flex-row">
+       lg:flex-row md:flex-row 2xl:flex-row xl:flex-row ">
         <ShuffleText content="Siddhant"></ShuffleText>
         <ShuffleText content=" Panwar"></ShuffleText>
       </span>

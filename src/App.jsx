@@ -13,13 +13,14 @@ import { useEffect, useState } from "react";
 import Preloader from "./components/PreLoader/Preloader";
 
 
+
 const App = () => {
   const [loading, setloading] = useState(false);
   useEffect(() => {
     setloading(true);
     setTimeout(() => {
       setloading(false);
-    }, 8000);
+    }, 1000);
     // 8000
   }, []);
   return (
@@ -28,7 +29,10 @@ const App = () => {
         <Preloader />
       ) : (
         <BrowserRouter>
-          <div className="flex bg-black w-[100vw] h-[100vh] v:flex-col sm:flex-col">
+          {/* <div className="flex bg-cover bg-[url('./assets/bg/bg12.jpg')]  w-[100vw] h-[100vh] v:flex-col sm:flex-col"> */}
+          {/* <div className="flex bg-cover bg-[url('./assets/bg/bg13.jpg')]  w-[100vw] h-[100vh] v:flex-col sm:flex-col"> */}
+          {/* <div className="flex bg-cover bg-[url('./assets/bg/bg14.jpg')]  w-[100vw] h-[100vh] v:flex-col sm:flex-col"> */}
+          <div className="flex bg-cover bg-[url('./assets/bg/bg12.jpg')] bg-current w-[100vw] h-[100vh] v:flex-col sm:flex-col">
             <div className="flex">
               <Navbar />
             </div>
