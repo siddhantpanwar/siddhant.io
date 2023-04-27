@@ -1,0 +1,26 @@
+
+svg {
+	width: 50vw;
+
+}
+svg text {
+	text-transform: uppercase;
+	animation: stroke 4s infinite alternate;
+	stroke-width: 2;
+	stroke: white;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(253, 253, 253, 0); stroke: #FF66C4;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+	}
+	30%  {fill: rgba(253, 253, 253, 0); stroke: #4C6EF5; }
+	40%  {fill: rgba(253, 253, 253, 0); stroke: #20C997; }
+	50%  {fill: rgba(253, 253, 253, 0); stroke: #66D9E8; }
+	60%  {fill: rgba(253, 253, 253, 0); stroke: #7950F2; }
+	70%  {fill: rgba(72,138,20,0); stroke: #FF66C4; stroke-width: 3; }
+	100% {
+		fill: white; stroke: rgba(25, 113, 255, 0.492); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 1;
+	}
+}
