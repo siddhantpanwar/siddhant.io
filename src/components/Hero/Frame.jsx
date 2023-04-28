@@ -11,11 +11,11 @@ function Frame() {
           className="
            border-[5px]
           rounded-[100%]
-          opacity-[89%] 
+          opacity-[85%] 
           v:border-[3px] v:w-[19rem] v:h-[19rem]  
           sm:w-[25rem] sm:h-[25rem] 
-          md:w-[29rem] md:h-[29em]
-          xl:w-[27rem] xl:h-[27rem]
+          md:w-[27rem] md:h-[27rem]
+          xl:w-[26rem] xl:h-[26rem]
           lg:w-[28rem] lg:h-[28rem]
           2xl:w-[29rem] 2xl:h-[29rem]"
         />

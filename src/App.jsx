@@ -32,7 +32,7 @@ const App = () => {
           {/* <div className="flex bg-cover bg-[url('./assets/bg/bg12.jpg')]  w-[100vw] h-[100vh] v:flex-col sm:flex-col"> */}
           {/* <div className="flex bg-cover bg-[url('./assets/bg/bg13.jpg')]  w-[100vw] h-[100vh] v:flex-col sm:flex-col"> */}
           {/* <div className="flex bg-cover bg-[url('./assets/bg/bg14.jpg')]  w-[100vw] h-[100vh] v:flex-col sm:flex-col"> */}
-          <div className="flex bg-cover bg-[url('./assets/bg/bg12.jpg')] bg-current w-[100vw] h-[100vh] v:flex-col sm:flex-col">
+          <div className="flex bg-cover bg-[url('./assets/bg/rb1.jpg')] bg-current w-[100vw] h-[100vh] v:flex-col sm:flex-col">
             <div className="flex">
               <Navbar />
             </div>
