@@ -1,8 +1,8 @@
 
-.Skillssvg svg {
+ svg {
 	width: 50vw;
 }
-.Skillssvg svg text {
+ svg text {
 	text-transform: uppercase;
 	animation: stroke 4s infinite alternate;
 	stroke-width: 2; 

@@ -8,7 +8,7 @@ function Skills() {
   return (
     <div
       className="flex flex-col justify-between md:justify-center v:justify-around
-        2xl:justify-center border-[2px]
+        2xl:justify-center 
        2xl:h-[100vh]
      xl:justify-evenly items-center sm:w-[100vw] xl:h-[100vh] xl:w-[80vw] xl:ml-[5rem]
       sm:h-[100vh] v:w-[100vw] v:h-[200vh] md:h-[100vh] md:w-[100vw] md:ml-[0rem]"
@@ -82,9 +82,12 @@ function Skills() {
               value={95}
               styles={{
                 text: {
-                  fontSize: "15px",
+                  fontSize: "18px",
                   fill: "#ffff",
                   trailColor: "#d6d6d6",
+                  animation:"none",
+                  strokeWidth:1,
+                  
                 },
                 trail:{
                   stroke:"#43393986"
@@ -99,7 +102,7 @@ function Skills() {
                   transformOrigin: 'center center',
                 },
               }}
-              className="uppercase font-medium"
+              className="uppercase font-thin"
               text={"html"}
             />
           </div>
@@ -110,9 +113,12 @@ function Skills() {
               value={95}
               styles={{
                 text: {
-                  fontSize: "15px",
+                  fontSize: "18px",
                   fill: "#ffff",
                   trailColor: "#d6d6d6",
+                  animation:"none",
+                  strokeWidth:1,
+                  
                 },
                 trail:{
                   stroke:"#43393986"
@@ -127,7 +133,7 @@ function Skills() {
                   transformOrigin: 'center center',
                 },
               }}
-              className="uppercase font-medium"
+              className="uppercase font-thin"
               text={"css"}
             />
           </div>
@@ -138,9 +144,12 @@ function Skills() {
               value={70}
               styles={{
                 text: {
-                  fontSize: "15px",
+                  fontSize: "18px",
                   fill: "#ffff",
                   trailColor: "#d6d6d6",
+                  animation:"none",
+                  strokeWidth:1,
+                  
                 },
                 trail:{
                   stroke:"#43393986"
@@ -155,7 +164,7 @@ function Skills() {
                   transformOrigin: 'center center',
                 },
               }}
-              className="uppercase font-medium"
+              className="uppercase font-thin"
               text={"js"}
             />
           </div>
@@ -166,9 +175,12 @@ function Skills() {
               value={75}
               styles={{
                 text: {
-                  fontSize: "15px",
+                  fontSize: "18px",
                   fill: "#ffff",
                   trailColor: "#d6d6d6",
+                  animation:"none",
+                  strokeWidth:1,
+                  
                 },
                 trail:{
                   stroke:"#43393986"
@@ -183,7 +195,7 @@ function Skills() {
                   transformOrigin: 'center center',
                 },
               }}
-              className="uppercase font-medium"
+              className="uppercase font-thin"
               text={"react"}
             />
           </div>
@@ -194,9 +206,12 @@ function Skills() {
               value={39}
               styles={{
                 text: {
-                  fontSize: "15px",
+                  fontSize: "18px",
                   fill: "#ffff",
                   trailColor: "#d6d6d6",
+                  animation:"none",
+                  strokeWidth:1,
+                  
                 },
                 trail:{
                   stroke:"#43393986"
@@ -211,7 +226,7 @@ function Skills() {
                   transformOrigin: 'center center',
                 },
               }}
-              className="uppercase font-medium"
+              className="uppercase font-thin"
               text={"native"}
             />
           </div>
@@ -222,9 +237,12 @@ function Skills() {
               value={80}
               styles={{
                 text: {
-                  fontSize: "15px",
+                  fontSize: "18px",
                   fill: "#ffff",
                   trailColor: "#d6d6d6",
+                  animation:"none",
+                  strokeWidth:1,
+                  
                 },
                 trail:{
                   stroke:"#43393986"
@@ -239,7 +257,7 @@ function Skills() {
                   transformOrigin: 'center center',
                 },
               }}
-              className="uppercase font-medium"
+              className="uppercase font-thin"
               text={"python"}
             />
           </div>
