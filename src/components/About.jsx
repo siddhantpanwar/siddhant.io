@@ -34,7 +34,7 @@ const About = () => {
         >
           <div
             className="flex justify-start v:justify-center v:items-center md:pt-[2rem]
-             sm:text-[2.4rem] md:w-[47vw] md:text-[3rem] 
+             sm:text-[2.4rem] md:w-[47vw] md:text-[3rem] 2xl:text-[6rem] 
            lg:pt-[3rem] text-[5rem] xl:text-[4.5rem] lg:text-[3.2rem] 
            v:text-[30px] v:w-[80vw] v:h-[5vh] v:pt-[1.5rem]
             font-medium uppercase"
