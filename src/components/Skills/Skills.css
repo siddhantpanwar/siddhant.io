@@ -1,0 +1,171 @@
+.percent1,.percent2,.percent3,.percent4,.percent5,.percent6, svg circle{
+  fill:transparent;
+  stroke : blue;
+  stroke-width: 5;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+  
+}
+
+.percent1,.percent2,.percent3,.percent4,.percent5,.percent6, svg circle:nth-child(1){
+  stroke-dashoffset: 0;
+
+  stroke: rgb(43, 43, 43);
+}
+.percent1 svg circle:nth-child(2){
+  stroke:#7950F2;
+  stroke-dashoffset: calc(440 - (440 * 63) / 100);
+
+}
+.percent2 svg circle:nth-child(2){
+  stroke:#7950F2;
+  stroke-dashoffset: calc(440 - (440 * 63) / 100);
+
+}
+.percent3 svg circle:nth-child(2){
+  stroke:#7950F2;
+  stroke-dashoffset: calc(440 - (440 * 55) / 100);
+
+}
+.percent4 svg circle:nth-child(2){
+  stroke:#7950F2;
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+
+}
+.percent5 svg circle:nth-child(2){
+  stroke:#7950F2;
+  stroke-dashoffset: calc(440 - (440 * 58) / 100);
+
+}
+.percent6 svg circle:nth-child(2){
+  stroke:#7950F2;
+  stroke-dashoffset: calc(440 - (440 * 53) / 100);
+
+}
+
+
+
+
+
+.ss1{
+  animation: progress1 2s forwards ease-in-out;
+}
+
+@keyframes progress1 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 30%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+.ss2{
+  animation: progress2 2s forwards ease-in-out;
+}
+
+@keyframes progress2 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 25%;
+  }
+  100%{
+    width: 45%;
+  }
+}
+.ss3{
+  animation: progress3 2s forwards ease-in-out;
+}
+
+@keyframes progress3 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 65%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+.ss4{
+  animation: progress4 2s forwards ease-in-out;
+}
+
+@keyframes progress4 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 55%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+.ss5{
+  animation: progress5 2s forwards ease-in-out;
+}
+
+@keyframes progress5 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 45%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+.ss6{
+  animation: progress6 2s forwards ease-in-out;
+}
+
+@keyframes progress6 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 25%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+.ss7{
+  animation: progress7 2s forwards ease-in-out;
+}
+
+@keyframes progress7 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 35%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+.ss8{
+  animation: progress8 2s forwards ease-in-out;
+}
+
+@keyframes progress8 {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 55%;
+  }
+  100%{
+    width: 90%;
+  }
+}

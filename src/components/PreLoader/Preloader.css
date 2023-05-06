@@ -1,12 +1,11 @@
 
-svg {
+.Skillssvg svg {
 	width: 50vw;
-
 }
-svg text {
+.Skillssvg svg text {
 	text-transform: uppercase;
 	animation: stroke 4s infinite alternate;
-	stroke-width: 2;
+	stroke-width: 2; 
 	stroke: white;
 }
 @keyframes stroke {

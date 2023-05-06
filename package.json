@@ -10,9 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "flowbite": "^1.6.5",
+    "flowbite-react": "^0.4.4",
     "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "simplebar-react": "^3.2.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -28,6 +34,7 @@
     "postcss": "^8.4.23",
     "react-shuffle-text": "^1.0.6",
     "split-text-js": "^1.0.3",
+    "tailwind-scrollbar": "^3.0.0",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.0"
   }

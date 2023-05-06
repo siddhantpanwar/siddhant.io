@@ -1,36 +1,62 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom"
 import { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 import { logo, close, menu } from "./../assets/index";
 
+
 const Navbar = () => {
   const [Active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  function togglehandler(){
-    setToggle(!toggle)
+  // const [about, setabout] = useState(false);
+
+  function togglehandler() {
+    setToggle(!toggle);
   }
+  function nevigate(active){
+    if(active === "About"){
+      window.scrollTo({
+        top:1000,
+        behavior:'smooth'
+      })
+    }
+    if(active === "Skills"){
+      window.scrollTo({
+        top:2000,
+        behavior:'smooth'
+      })
+    }
+  }
+
   return (
-    // sm:w-[100vw] sm:flex sm:justify-center sm:pt-[2rem] sm:px-[2rem]
-    <div className="flex flex-col justify-between w-[10rem]  v:w-[100vw] v:flex v:justify-center v:pt-[2rem] v:px-[2rem]
-    sm:w-[100vw] sm:flex sm:justify-center sm:pt-[2rem] sm:px-[2rem] ">
-      <div className="flex pt-[4rem] justify-center items-center v:justify-between v:pt-[0] v:items-center  sm:justify-between sm:pt-[0.5rem] sm:items-center  ">
+    <div
+      className="flex flex-col justify-between w-[10rem]
+        v:w-[100vw] v:flex v:justify-center v:pt-[2rem] v:px-[2rem]
+    sm:w-[100vw] sm:flex sm:justify-center sm:pt-[2rem] sm:px-[2rem]
+     md:w-[100vw] md:flex md:justify-center md:pt-[2rem] md:px-[2rem] "
+    >
+      <div
+        className="flex pt-[4rem] justify-center items-center v:justify-between v:pt-[0]
+       v:items-center  sm:justify-between sm:pt-[0.5rem] sm:items-center 
+       md:justify-between md:pt-[0.5rem] md:items-center "
+      >
         <Link
           to="/"
           className=""
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
+            // setabout(false);
           }}
         >
           <img
-            className="v:w-[5rem] w-[6rem] animate-spin object-contain text-white"
+            className={`v:w-[5rem] w-[6rem] animate-spin object-contain text-white`}
             src={logo}
             alt="logo"
           />
         </Link>
-        {/* md:hidden  */}
-        <div className="md:hidden lg:hidden xl:hidden 2xl:hidden">
+
+        <div className="lg:hidden xl:hidden 2xl:hidden">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -50,7 +76,7 @@ const Navbar = () => {
                   to="/"
                   className="flex flex-row justify-between"
                   onClick={() => {
-                     setActive("");
+                    setActive("");
                     window.scrollTo(0, 0);
                   }}
                 >
@@ -71,21 +97,28 @@ const Navbar = () => {
               <ul className="list-none flex flex-col gap-10">
                 {navLinks.map((link) => (
                   <li
+                    key={link.id}
                     className={`${
                       Active === link.title ? "text-white" : "text-[#adadad]"
                     } cursor-pointer text-[1.7rem] text-center uppercase font-medium`}
                     onClick={() => {
                       setActive(link.title);
                       setToggle(!toggle);
+                      // window.scrollTo(0, 0);
+                      nevigate(link.id)
+                 
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <a to={`${link.title}`}>{link.title}</a>
                   </li>
                 ))}
               </ul>
 
               <div>
-                <div className="flex flex-row justify-between] gap-5 h-[5rem] pt-[1rem] pl-[2rem]">
+                <div
+                  className="flex flex-row justify-between]
+                 gap-5 h-[5rem] pt-[1rem] pl-[2rem]"
+                >
                   <a
                     className=""
                     href="https://twitter.com/SIDDHANTPANWA17"
@@ -139,21 +172,28 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="flex flex-col items-center v:hidden sm:hidden">
+      <nav className="flex flex-col items-center v:hidden sm:hidden md:hidden">
         <div className="flex flex-row-reverse list-none rotate-[-90deg] gap-5">
           {navLinks.map((link) => (
             <li
-              className={`${
-                Active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer `}
-              onClick={() => setActive(link.title)}
+            key={link.id}
+            className={`${
+              Active === link.title ? "text-white" : "text-[#adadad]"
+            } cursor-pointer text-[1.3rem] text-center  font-medium`}
+            onClick={() => {
+              setActive(link.title);
+              setToggle(!toggle);
+              // window.scrollTo(0, 0);
+              nevigate(link.title)
+              
+            }}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <Link to={`#${link.id}`}>{link.title}</Link>
             </li>
           ))}
         </div>
       </nav>
-      <div className="v:hidden sm:hidden flex flex-col items-center pb-[4rem] gap-5">
+      <div className="v:hidden sm:hidden md:hidden flex flex-col items-center pb-[4rem] gap-5">
         <a
           className=""
           href="https://twitter.com/SIDDHANTPANWA17"
