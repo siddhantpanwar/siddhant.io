@@ -36,12 +36,12 @@ function Skills() {
                v:justify-center
                v:items-center  v:mt-[0]
              uppercase h-[10vh] sm:h-[12vh] md:h-[12vh] justify-start 2xl:mt-[0rem]
-               mt-[2rem] sm:mt-[0]
+               mt-[2rem] sm:mt-[1rem]
              xl:mt-[1.5rem] lg:mt-[1.5rem]  sm:w-[98vw]  2xl:h-[12vh]"
             >
               <h1
                 className="text-[8rem] xl:text-[6rem] lg:text-[5rem]
-               sm:text-[6rem] v:text-[4rem] font-medium md:text-[6rem]"
+               sm:text-[4rem] v:text-[4rem] font-medium md:text-[6rem]"
               >
                 *Skills*
               </h1>
@@ -49,7 +49,7 @@ function Skills() {
             <div
               className="flex 2xl:w-[30vw] sm:w-[85vw] v:mt-[1rem] 
                v:w-[88vw] sm:items-center mt-[7rem] xl:mt-[2.5rem] 
-            lg:mt-[1.5rem] lg:w-[36vw] sm:mt-[1rem] xl:w-[36vw] md:w-[85vw]
+            lg:mt-[1.5rem] lg:w-[36vw] sm:mt-[0rem] xl:w-[36vw] md:w-[85vw]
              md:mt-[1rem] md:items-center"
             >
               <span
@@ -67,7 +67,7 @@ function Skills() {
         </div>
 
         <div
-          class="2xl:w-[30vw] 2xl:gap-[5rem] sm:w-[90vw] sm:h-[15vh] sm:mt-[1rem]
+          class="2xl:w-[30vw] 2xl:gap-[5rem] sm:w-[72vw] sm:h-[15vh] sm:mt-[2rem]
           md:w-[90vw] md:h-[15vh] md:mt-[1rem] v:items-center
            v:w-[70vw] v:h-[50vh] v:mt-[1rem]  md:justify-items-center md:items-center 
            md:grid-cols-6 md:gap-[0px] 
@@ -76,7 +76,7 @@ function Skills() {
          gap-[20px] lg:gap-[30px] lg:w-[32vw]"
         >
           <div className="border-[0px] 2xl:w-[8vw]  xl:w-[8.5vw] lg:w-[9vw] md:w-[10vw]
-           sm:w-[6rem] v:w-[6rem]">
+           sm:w-[4.5rem] v:w-[6rem]">
             {" "}
             <CircularProgressbar
               value={95}
@@ -107,7 +107,7 @@ function Skills() {
             />
           </div>
           <div className="border-[0px] 2xl:w-[8vw] xl:w-[8.5vw] lg:w-[9vw] md:w-[10vw]
-           sm:w-[6rem] v:w-[6rem]">
+           sm:w-[4.5rem] v:w-[6rem]">
             {" "}
             <CircularProgressbar
               value={95}
@@ -138,7 +138,7 @@ function Skills() {
             />
           </div>
           <div className="border-[0px] 2xl:w-[8vw] xl:w-[8.5vw] lg:w-[9vw] md:w-[10vw]
-           sm:w-[6rem] v:w-[6rem]">
+           sm:w-[4.5rem] v:w-[6rem]">
             {" "}
             <CircularProgressbar
               value={70}
@@ -169,7 +169,7 @@ function Skills() {
             />
           </div>
           <div className="border-[0px] 2xl:w-[8vw] xl:w-[8.5vw] lg:w-[9vw] md:w-[10vw]
-           sm:w-[6rem] v:w-[6rem]">
+           sm:w-[4.5rem] v:w-[6rem]">
             {" "}
             <CircularProgressbar
               value={75}
@@ -200,7 +200,7 @@ function Skills() {
             />
           </div>
           <div className="border-[0px] 2xl:w-[8vw] xl:w-[8.5vw] lg:w-[9vw] md:w-[10vw] 
-          sm:w-[6rem] v:w-[6rem]">
+          sm:w-[4.5rem] v:w-[6rem]">
             {" "}
             <CircularProgressbar
               value={39}
@@ -231,7 +231,7 @@ function Skills() {
             />
           </div>
           <div className="border-[0px] 2xl:w-[8vw] xl:w-[8.5vw] lg:w-[9vw] md:w-[10vw]
-           sm:w-[6rem] v:w-[6rem]">
+           sm:w-[4.5rem] v:w-[6rem]">
             {" "}
             <CircularProgressbar
               value={80}
@@ -266,7 +266,7 @@ function Skills() {
       <div
         className="flex w-[79vw] h-[35vh] v:w-[97vw] 2xl:h-[40vh] v:h-[100vh]  lg:h-[49vh]
         v:justify-start 2xl:mt-[0rem] xl:h-[20vh] md:w-[98vw] md:mt-[-3rem] md:h-[60vh] 
-        sm:w-[98vw] sm:mt-[-3rem] sm:h-[60vh] flex-col items-center justify-center v:mt-[0rem]"
+        sm:w-[98vw] sm:mt-[-0rem] sm:h-[60vh]  flex-col items-center justify-center v:mt-[0rem]"
       >
         <div
           className="w-[79vw] h-[10vh] v:w-[100vw]
@@ -274,7 +274,7 @@ function Skills() {
         >
           <h1
             className="text-[5rem] xl:text-[3.5rem] lg:text-[4rem] 
-           sm:text-[3.5rem] sm:mt-[0] font-medium uppercase v:text-[2rem] 
+           sm:text-[3.5rem] sm:mt-[15px] font-medium uppercase v:text-[2rem] 
            v:mt-[0rem] 2xl:mt-[0rem] md:text-[3.5rem] md:mt-[0] "
           >
             ❄️Soft skills❄️
@@ -283,21 +283,21 @@ function Skills() {
 
         <div
           class="grid grid-cols-4 sm:h-[40vh] md:h-[45vh] v:h-[100vh] v:pt-[0rem] v:mt-[0rem] 
-           v:grid-cols-1 2xl:h-[25vh]  xl:h-[20vh]  
+           v:grid-cols-1 2xl:h-[25vh]  xl:h-[20vh] sm:gap-[16px]  
           sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:mt-[1rem] gap-[2rem] v:gap-[0rem]
          lg:gap-[1rem] items-center w-[75vw] h-[20vh] pt-[3rem] sm:mt-[2.2rem] md:mt-[0rem]
-          sm:pt-[0] xl:pt-[0] lg:pt-[0] v:items-start"
+          sm:pt-[0] xl:pt-[0] lg:pt-[0] v:items-start "
         >
           {/* <CircularProgressbar value={percentage} text={"HTML"} /> */}
 
           <div>
             <div class="relative pt-1">
               <div
-                class="w-[100%] overflow-hidden items-center h-[4rem] flex rounded-full
+                class="w-[100%] overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full
                border-[0] bg-black shadow-[0_0_1.5rem_inset_] shadow-[#7950F2]"
               >
                 <div
-                  class="ss1 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss1 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[50%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[#7950f2]"
@@ -315,11 +315,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[#FF66C4]"
               >
                 <div
-                  class="ss2 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss2 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[#FF66C4]"
@@ -334,11 +334,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[#FF914D]"
               >
                 <div
-                  class="ss3 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss3 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[#FF914D]"
@@ -353,11 +353,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[cyan]"
               >
                 <div
-                  class="ss4 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss4 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[cyan]"
@@ -372,11 +372,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[#7950f2]"
               >
                 <div
-                  class="ss5 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss5 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[#7950f2]"
@@ -391,11 +391,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[#FF66C4]"
               >
                 <div
-                  class="ss6 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss6 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[#FF66C4]"
@@ -410,11 +410,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[#FF914D]"
               >
                 <div
-                  class="ss7 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss7 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[#FF914D]"
@@ -429,11 +429,11 @@ function Skills() {
           <div>
             <div class="relative pt-1">
               <div
-                class="overflow-hidden items-center h-[4rem] flex rounded-full border-[0]
+                class="overflow-hidden items-center h-[4rem] sm:h-[3.5rem] flex rounded-full border-[0]
                bg-black shadow-[0_0_1.5rem_inset_] shadow-[cyan]"
               >
                 <div
-                  class="ss8 flex flex-col h-[4rem] text-center border-[0]
+                  class="ss8 flex flex-col h-[4rem] sm:h-[3.5rem] text-center border-[0]
                    justify-center
                    w-[60%] rounded-full bg-[rgba(0, 0, 0, 0.1)]
                    shadow-[0_0_1.1rem_inset_] shadow-[cyan]"
