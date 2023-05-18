@@ -218,7 +218,6 @@ export default function App() {
                 <img src={pbg15} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
-                  
                   heaven forest
                 </figcaption>
               </figure>

@@ -225,9 +225,16 @@
 @media (min-width: 1537px) {
   .swiper-slide figure {
     /* margin: 0; */
-    margin-top: -4rem;
+    /* margin-top: -rem; */
   }
-
+  .swiper-slide figcaption{
+    font-size: 70px;
+    line-height: 50px;
+    /* border:2px solid red; */
+  }
+  .swiper-slide img {
+    height: 37rem;
+  }
   .swiper-pagination-horizontal{
     --swiper-pagination-top:43rem;
     --swiper-pagination-bullet-horizontal-gap:8px;
