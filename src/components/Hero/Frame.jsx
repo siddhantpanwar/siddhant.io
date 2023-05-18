@@ -12,12 +12,12 @@ function Frame() {
            border-[5px]
           rounded-[100%]
           opacity-[85%] 
-          v:border-[3px] v:w-[19rem] v:h-[19rem] v:mt-[2rem] 2xl:mt-[1rem]
+          v:border-[3px] v:w-[19rem] v:h-[19rem] v:mt-[2rem] 2xl:mt-[0.5rem]
           sm:w-[25rem] sm:h-[25rem] 
           md:w-[24rem] md:h-[24rem]
           xl:w-[26rem] xl:h-[26rem]
           lg:w-[28rem] lg:h-[28rem]
-          2xl:w-[33rem] 2xl:h-[33rem]"
+          2xl:w-[32rem] 2xl:h-[32rem]"
         />
       </div>
       {/* // border-l-[5px]

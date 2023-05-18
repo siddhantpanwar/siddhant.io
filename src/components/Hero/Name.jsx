@@ -1,5 +1,5 @@
 import ShuffleText from "react-shuffle-text";
-import "./para.css";
+import "./Name.css";
 import Quote from "./Quote";
 export default function Name() {
   return (

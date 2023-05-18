@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import SplitTextJS from 'split-text-js';

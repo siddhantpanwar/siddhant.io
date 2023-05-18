@@ -26,6 +26,12 @@ const Navbar = () => {
         behavior:'smooth'
       })
     }
+    if(active === "Projects"){
+      window.scrollTo({
+        top:3000,
+        behavior:'smooth'
+      })
+    }
   }
 
   return (

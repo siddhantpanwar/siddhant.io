@@ -3,9 +3,10 @@ import { Hero } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import Preloader from "./components/PreLoader/Preloader";
-
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
+  // ----------------------------PRELOADER-----------------------------------
   const [loading, setloading] = useState(false);
   useEffect(() => {
     setloading(true);
@@ -14,6 +15,10 @@ const App = () => {
     }, 8000);
     // 8000
   }, []);
+  // ----------------------------PRELOADER-End-----------------------------------
+  // ----------------------------About-------------------------------------------
+
+  // ----------------------------About-End---------------------------------------
 
   return (
     <div className="v:h-[1000vh] xl:h-[300vh]">
@@ -34,7 +39,7 @@ const App = () => {
                 lg:h-[100vh]
                xl:h-[100vh] 2xl:h-[100vh]"
               >
-                <Navbar/>
+                <Navbar />
               </div>
               <div className="w-[100vw] h-[100vh] md:mt-[0rem]">
                 <Hero />
@@ -58,6 +63,14 @@ const App = () => {
              v:h-[200vh] "
             >
               <Skills />
+            </div>
+            <div
+              className="flex items-center justify-center bg-[black]  h-[100vh] 
+              v:pl-[0] v:mt-[0rem]   
+               2xl:pl-[8rem] xl:pl-[6rem] lg:pl-[7rem] md:pl-[0] sm:pl-[0] 
+             "
+            >
+              <Projects />
             </div>
           </div>
         </BrowserRouter>
