@@ -27,7 +27,7 @@
   display: flex;
   padding: -10rem 0rem;
   justify-content: center;
-  align-items: end;
+  align-items: flex-start;
   width: 100%;
   font-size: 5rem;
   letter-spacing: 2px;
@@ -84,40 +84,15 @@
   .swiper-pagination-horizontal{
     /* border:2px solid red; */
     --swiper-pagination-top:33rem;
-    --swiper-pagination-bullet-horizontal-gap:14px;
+    --swiper-pagination-bullet-horizontal-gap:12px;
   }
   .swiper-pagination-bullet{
     /* --swiper-pagination-bullet-margin:1rem; */
-    --swiper-pagination-bullet-height:13px;
-    --swiper-pagination-bullet-width:13px;
+    --swiper-pagination-bullet-height:15px;
+    --swiper-pagination-bullet-width:15px;
   }
 }
-@media (min-width: 310px) {
-  .swiper-slide figure {
-    /* border:2px solid red; */
-    /* margin: 0; */
-    margin-top: -1.3rem;
-  }
-  .swiper-slide figcaption{
-    font-size: 40px;
-    line-height: 43px;
-    /* border:2px solid red; */
-  }
-  .swiper-slide img {
-    height: 28rem;
-  }
 
-  .swiper-pagination-horizontal{
-    /* border:2px solid red; */
-    --swiper-pagination-top:33rem;
-    --swiper-pagination-bullet-horizontal-gap:14px;
-  }
-  .swiper-pagination-bullet{
-    /* --swiper-pagination-bullet-margin:1rem; */
-    --swiper-pagination-bullet-height:13px;
-    --swiper-pagination-bullet-width:13px;
-  }
-}
 
 /* Breakpoint for screen size >= 641px */
 @media (min-width: 641px) {
@@ -223,10 +198,7 @@
   }
 }
 @media (min-width: 1537px) {
-  .swiper-slide figure {
-    /* margin: 0; */
-    /* margin-top: -rem; */
-  }
+
   .swiper-slide figcaption{
     font-size: 70px;
     line-height: 50px;
