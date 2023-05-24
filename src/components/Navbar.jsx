@@ -32,6 +32,12 @@ const Navbar = () => {
         behavior:'smooth'
       })
     }
+    if(active === "Contact"){
+      window.scrollTo({
+        top:4000,
+        behavior:'smooth'
+      })
+    }
   }
 
   return (

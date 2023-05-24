@@ -31,10 +31,11 @@ function HeroLoader() {
   }, []);
 
   return (
-    <div className='flex mt-[10rem] items-center v:mt-[5rem]
+    <div className='flex mt-[10rem] items-center v:mt-[2.5rem]
      sm:mt-[2rem] md:mt-[2rem] lg:mt-[9rem] 2xl:mt-[7rem]'>
        {/* sm:text-[40px] */}
-      <div className=' flex-col leading-[0] m-0 text-[3rem] sm:text-[2.5rem] md:text-[3.5rem] text-[#e2d4baff] text-center v:text-[25px] 2xl:text-[3rem] '>
+      <div className=' flex-col leading-[0] m-0 text-[3rem] sm:text-[2.5rem] 
+      md:text-[3.5rem] text-[#e2d4baff] text-center v:text-[25px] 2xl:text-[3rem] '>
         <p className=''>Cloud☁️</p>
         <p className=''>Webflow</p>
         <p className=''>Wordpress</p>

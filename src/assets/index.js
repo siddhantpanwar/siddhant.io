@@ -5,6 +5,11 @@ import close from "./close.svg"
 import menu from "./menu.svg"
 import aboutImg from "./p4.jpg"
 
+// svgs
+
+
+
+
 import pbg1 from "./ProjectsImages/projectbg1.jpg"
 import pbg2 from "./ProjectsImages/projectbg2.jpg"
 import pbg3 from "./ProjectsImages/projectbg3.jpg"
@@ -28,7 +33,7 @@ export  {
   close,
   menu,
   aboutImg,
-
+   
   pbg1,
   pbg2,
   pbg3,

@@ -25,14 +25,31 @@ import { Mousewheel, Pagination, Parallax } from "swiper";
 
 export default function App() {
   return (
-    <div className=" flex flex-col justify-start items-center w-[100vw] h-[100vh]">
-      <div className="pt-[3.5rem] v:pt-[1.5rem]">
+    <div className=" flex flex-col justify-center items-center w-[100vw] h-[auto]  
+    2xl:mt-[4rem]
+    xl:mt-[5.5rem]
+    lg:mt-[2rem]
+    sm:mt-[0rem]
+    v:mt-[3.5rem]
+    ">
+      <div className="pt-[3.5rem] 
+      v:pt-[1rem] 
+      2xl:pt-[3rem]
+      xl:pt-[0rem]
+      lg:pt-[0rem]
+      sm:pt-[0rem]
+      ">
         <h1 className="Namepro text-[white] text-[5.5rem] uppercase font-semibold 
-        xl:text-[5rem] lg:text-[4.2rem] md:text-[4.2rem] sm:text-[3.4rem] v:text-[29px]">
+        2xl:text-[4.5rem]
+        xl:text-[5rem] 
+        lg:text-[4.2rem] 
+        md:text-[4.2rem] 
+        sm:text-[3.4rem] 
+        v:text-[29px]">
           ⚒️Projects Page⚒️
         </h1>
       </div>
-      <div className="pt-[.5rem]">
+      <div className="pt-[.5rem] ">
         <Swiper
           direction="horizontal"
           slidesPerView={1.3}
@@ -47,14 +64,19 @@ export default function App() {
             clickable: true,
           }}        
           modules={[Mousewheel, Pagination, Parallax]}
-          className="mySwiper w-[80vw] h-[75vh] xl:h-[75vh] v:h-[88vh]
-           image-slider rounded-xl 
+          className="mySwiper w-[80vw] image-slider rounded-xl 
+          v:h-[88vh] v:mt-[0rem]
+          2xl:h-[50rem] 2xl:pt-[1rem]
+          xl:h-[45rem] xl:pt-[0rem] 
+          lg:h-[38rem] lg:pt-[1rem]
+          sm:h-[49rem] sm:pt-[1rem] 
            "
           data-swiper-parallax="-23%"
           breakpoints={{
             // v 
             310: {
               slidesPerView: 1,
+              pagination:false,              
             },
             // sm
             641: {
@@ -78,7 +100,6 @@ export default function App() {
             },
           }}
         >
-
           <SwiperSlide data-swiper-parallax="-300">
             <div class="swiper-slide">
                 <img src={pbg2} alt="Marbella, Spain" />
@@ -124,7 +145,7 @@ export default function App() {
                 <img src={pbg6} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
-                  beach forest
+                  beach 
                 </figcaption>
               </figure>
             </div>
@@ -170,106 +191,10 @@ export default function App() {
               </figure>
             </div>
           </SwiperSlide>
-          <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
-                <img src={pbg11} alt="Marbella, Spain" />
-              <figure>
-                <figcaption>
-                  
-                   wreckage
-                </figcaption>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
-                <img src={pbg12} alt="Marbella, Spain" />
-              <figure>
-                <figcaption>
-                  
-                  whale forest
-                </figcaption>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
-                <img src={pbg13} alt="Marbella, Spain" />
-              <figure>
-                <figcaption>
-                  
-                  pink city
-                </figcaption>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
-                <img src={pbg14} alt="Marbella, Spain" />
-              <figure>
-                <figcaption>                 
-                  magic forest
-                </figcaption>
-              </figure>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
-                <img src={pbg15} alt="Marbella, Spain" />
-              <figure>
-                <figcaption>
-                  heaven forest
-                </figcaption>
-              </figure>
-            </div>
-          </SwiperSlide>
+
         </Swiper>
-        {/* <div className="text-slider mt-[-4.3rem] ">
-          <Swiper
-            direction="vertical"
-            slidesPerView={1}
-            spaceBetween={0}
-            mousewheel={false}
-            grabCursor={true}
-            speed={1000}
-            parallax={true}
-            pagination={{
-              clickable: false,
-            }}
-            modules={[ Parallax,Mousewheel, Pagination]}
-            className="mySwiper border-[none]  h-[9rem] text-[#ffffff]"
-            ref={textSliderRef}
-            data-swiper-parallax="-23%"
-           
-          >
-            <SwiperSlide data-swiper-parallax="-300">
-              <h4 className="text-[5.5rem] uppercase font-[500] transition ease-in-out delay-150">House</h4>
-            </SwiperSlide>
-            <SwiperSlide data-swiper-parallax="-300">
-              <h4 className="text-[5.5rem] uppercase font-[500] transition ease-in-out delay-150">3d based art</h4>
-            </SwiperSlide>
-            <SwiperSlide data-swiper-parallax="-300">
-              <h4 className="text-[5.5rem] uppercase font-[500] transition ease-in-out delay-150">mountain</h4>
-            </SwiperSlide>
-            <SwiperSlide data-swiper-parallax="-300">
-              <h4 className="text-[5.5rem] uppercase font-[500] transition ease-in-out delay-150">blue orange</h4>
-            </SwiperSlide>
-            <SwiperSlide data-swiper-parallax="-300">
-              <h4 className="text-[5.5rem] uppercase font-[500] transition ease-in-out delay-150">maps</h4>
-            </SwiperSlide>
-          </Swiper>
-        </div> */}
       </div>
     </div>
   );
 }
 
-//   const swiper2 = new Swiper("#swiper-2", {
-//
-//   });
-
-//   return () => {
-//     swiper1.destroy();
-//     swiper2.destroy();
-//   };
-// }, []);
