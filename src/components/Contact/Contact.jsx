@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Lottie from "lottie-react";
 import animationData from "./mailanimation.json";
 import Sm from "./Sm";
+import axios from 'axios';
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -22,6 +23,27 @@ function Contact() {
       setErrors((prevState) => ({ ...prevState, email: "" }));
     }
   };
+
+  const [formData, setFormData] = useState({});
+  
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+  };
+  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios.post('/', formData)
+      .then((response) => {
+        console.log('Form submitted successfully', response);
+      })
+      .catch((error) => {
+        console.error('Form submission error', error);
+      });
+  };
+  
 
   return (
     <div className="flex flex-col w-[100%] h-[100vh] justify-center items-center
@@ -123,11 +145,8 @@ function Contact() {
             </span>
           </div>
           <form
-            onSubmit="submit"
+            onSubmit={submit}
             name="contact v1"
-            method="POST"
-            data-netlify="true"
-            netlify
             className="w-[80%] h-[60%] mt-[2rem] flex flex-col justify-center 
             xl:h-[60%] xl:mt-[1rem]
             lg:h-[55%] lg:mt-[1rem]
@@ -150,19 +169,21 @@ function Contact() {
                   type="text"
                   id="username"
                   placeholder="Fullname"
+                  
                   name="username"
                   className="w-[100%] rounded-full  bg-[#000000]
                   shadow-[0px_0px_.9rem_inset_5px_] shadow-[#7950f2]
                   px-[1.5rem] py-2 h-[3.5rem]
                   "
                   value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  onChange={handleChange}
                 />
               </div>
               <div className="w-[50%] v:w-[100%]">
                 <input
                   type="email"
                   id="email"
+                  onChange={handleChange}
                   placeholder="Email"
                   name="email"
                   className={`w-[100%] px-[1.5rem] py-2 h-[3.5rem]
@@ -170,7 +191,7 @@ function Contact() {
                   shadow-[0px_0px_.9rem_inset_5px_] 
                     ${errors.email ? "shadow-[#ff1b1b]" : "shadow-[#7950f2]"}`}
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  
                   onBlur={validateEmail}
                 />
                 {errors.email && <p className="text-red-500">{errors.email}</p>}
@@ -192,10 +213,11 @@ function Contact() {
                  max-h-[80%] rounded-xl w-[96%]
                  xl:w-[100%] 
                  "
+                onChange={handleChange}
                 placeholder="Message"
                 value={message}
                 name="message"
-                onChange={(e) => setMessage(e.target.value)}
+                
               ></textarea>
             </div>
             <div
