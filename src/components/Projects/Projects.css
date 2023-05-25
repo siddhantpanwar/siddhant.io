@@ -107,11 +107,11 @@
     /* border:2px solid red; */
   }
   .swiper-slide img {
-    height: 43rem;
+    height: 60vh;
   }
 
   .swiper-pagination-horizontal{
-    --swiper-pagination-top:47rem;
+    --swiper-pagination-top:43rem;
     --swiper-pagination-bullet-horizontal-gap:8px;
   }
   .swiper-pagination-bullet{
@@ -134,11 +134,11 @@
     /* border:2px solid red; */
   }
   .swiper-slide img {
-    height: 39rem;
+    height: 60vh
   }
 
   .swiper-pagination-horizontal{
-    --swiper-pagination-top:39.9rem;
+    --swiper-pagination-top:35.9rem;
     --swiper-pagination-bullet-horizontal-gap:5px;
   }
   .swiper-pagination-bullet{

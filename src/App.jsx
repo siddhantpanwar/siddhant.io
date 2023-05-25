@@ -43,7 +43,7 @@ const App = () => {
               >
                 <Navbar />
               </div>
-              <div className="w-[100vw] h-[100vh] md:mt-[0rem] lg:ml-[5rem] ">
+              <div className="w-[100vw] h-[100vh] ">
                 <Hero />
               </div>
             </div>
@@ -66,7 +66,7 @@ const App = () => {
               md:h-[100vh] md:w-[100vw] md:mt-[0]  md:pl-[0] 
               lg:h-[100vh] lg:w-[100vw] lg:mt-[0] lg:pl-[5rem]
               xl:h-[100vh] xl:w-[100vw] xl:mt-[0] xl:pl-[5rem]
-              2xl:h-[100vh] 2xl:pl-[4rem]  2xl:mt-[1.5rem]
+              2xl:h-[100vh] 2xl:pl-[4rem]  2xl:mt-[1.5rem] border-green-800
              "
             >
               <Skills />
@@ -78,7 +78,7 @@ const App = () => {
               md:pl-[0] 
               lg:pl-[7rem] 
               xl:pl-[6rem] 
-              2xl:pl-[6rem] 2xl:mt-[1.5rem]
+              2xl:pl-[6rem] 2xl:mt-[1.5rem] 
              "
             >
               <Projects />
@@ -89,8 +89,7 @@ const App = () => {
             xl:h-[100vh] xl:w-[100vw] xl:pl-[6rem] 
             lg:h-[100vh] lg:w-[100vw] lg:pl-[6rem] 
             md:h-[100vh] md:w-[100vw] md:pl-[0rem] 
-            v:h-[auto] v:w-[100vw] v:pl-[0rem] 
-            "
+            v:h-[auto] v:w-[100vw] v:pl-[0rem] "
             >
               <Contact />
             </div>

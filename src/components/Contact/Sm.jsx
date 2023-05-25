@@ -3,8 +3,12 @@ import React from "react";
 function Sm() {
   return (
     <div className="grid grid-cols-6 gap-[2rem] w-[100%] h-[100%]
-    v:gap-[0rem] v:grid-cols-6 v:justify-items-center v:w-[90%]
+    v:gap-[10px] v:grid-cols-6 v:justify-items-center v:w-[90%]
     xl:gap-[2rem]
+    2xl:gap-[1rem]
+    lg:gap-[2rem] lg:justify-items-center
+    md:gap-[3rem] md:justify-items-center
+    sm:gap-[2rem] sm:justify-items-center
     ">
       <a href="https://www.linkedin.com/in/siddhant-panwar-22742b212/"  target="_blank">
         <svg
@@ -12,7 +16,7 @@ function Sm() {
           width="100"
           height="100"
           fill-rule="evenodd"
-          className="w-[2.5rem] v:w-[2rem] v:h-[2rem]"
+          className="w-[2.5rem] v:w-[2rem] v:h-[2rem] 2xl:h-[3rem] xl:h-[2rem] lg:h-[2rem] sm:h-[3rem] md:h-[2rem]"
           clip-rule="evenodd"
           image-rendering="optimizeQuality"
           shape-rendering="geometricPrecision"
@@ -33,7 +37,7 @@ function Sm() {
           data-name="Ebene 1"
           viewBox="0 0 1024 1024"
           id="facebook-logo-2019"
-          className="w-[2.5rem] v:w-[2rem] v:h-[2rem]"
+          className="w-[2.5rem] v:w-[2rem] v:h-[2rem] 2xl:h-[3rem] xl:h-[2rem] sm:h-[3rem] lg:h-[2rem] md:h-[2rem]"
         >
           <path
             fill="#1877f2"
@@ -50,7 +54,7 @@ function Sm() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           id="behance"
-          className="w-[3rem] v:w-[2rem] v:h-[2rem]"
+          className="w-[3rem] v:w-[2rem] v:h-[2rem] 2xl:h-[3rem] xl:h-[2rem] sm:h-[3rem] lg:h-[2rem] md:h-[2rem]"
         >
           <path fill="#ffff" d="M28 1c1.654 0 3 1.346 3 3v24c0 1.654-1.346 3-3 3H4c-1.654 0-3-1.346-3-3V4c0-1.654 1.346-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z"></path>
           <path  fill="#ffff" d="M14.192 15.573s1.773-.135 1.773-2.256c0-2.12-1.203-3.165-3.041-3.165l-6.297-.01v11.715h6.443s3.222.102 3.222-3.514c.001 0 .238-2.77-2.1-2.77zM8.971 11.9h3.222s1.102.018 1.102 1.447c0 1.481-1.102 1.481-1.102 1.481H8.971V11.9zm3.515 8.2H8.971v-3.514h3.514s1.757.018 1.757 1.757-1.503 1.757-1.756 1.757zM21.272 13.071c-4.401 0-4.393 4.393-4.393 4.393s-.293 4.393 4.393 4.393c0 0 4.1 0 4.1-3.514h-2.343s0 1.757-1.757 1.757c0 0-1.757 0-1.757-2.343h5.857c0-1.171 0-4.686-4.1-4.686zm-1.758 3.515s-.039-1.757 1.757-1.757c1.795 0 1.757 1.757 1.757 1.757h-3.514zM18.929 11.314h4.686v1.171h-4.686z"></path>
@@ -60,7 +64,7 @@ function Sm() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           id="twitter"
-          className="w-[3rem] v:w-[2rem] v:h-[2rem]"
+          className="w-[3rem] v:w-[2rem] v:h-[2rem] 2xl:h-[3rem] xl:h-[2rem] sm:h-[3rem] lg:h-[2rem] md:h-[2rem]"
           x="0"
           y="0"
           version="1.1"
@@ -100,7 +104,7 @@ function Sm() {
       <a href="https://github.com/siddhantpanwar" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-[3rem] v:w-[2rem] v:h-[2rem]"
+          className="w-[3rem] v:w-[2rem] v:h-[2rem] 2xl:h-[3rem] xl:h-[2rem] sm:h-[3rem] lg:h-[2rem] md:h-[2rem]"
           viewBox="0 0 16 16"
           id="github"
         >
@@ -117,7 +121,7 @@ function Sm() {
           height="102"
           viewBox="0 0 102 102"
           id="instagram"
-          className="w-[3rem] v:w-[2rem] v:h-[2rem]"
+          className="w-[3rem] v:w-[2rem] v:h-[2rem] 2xl:h-[3rem] xl:h-[2rem] sm:h-[3rem] lg:h-[2rem] md:h-[2rem]"
         >
           <defs>
             <radialGradient

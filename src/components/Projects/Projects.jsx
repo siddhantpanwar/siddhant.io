@@ -25,18 +25,20 @@ import { Mousewheel, Pagination, Parallax } from "swiper";
 
 export default function App() {
   return (
-    <div className=" flex flex-col justify-center items-center w-[100vw] h-[auto]  
+    <div className=" flex flex-col justify-center items-center w-[100vw] h-[100vh]  
     2xl:mt-[4rem]
     xl:mt-[5.5rem]
     lg:mt-[2rem]
-    sm:mt-[0rem]
-    v:mt-[3.5rem]
+    md:mt-[0rem]
+    sm:mt-[8rem]
+    v:mt-[2.5rem]
     ">
-      <div className="pt-[3.5rem] 
+      <div className="pt-[3.5rem]
       v:pt-[1rem] 
       2xl:pt-[3rem]
       xl:pt-[0rem]
-      lg:pt-[0rem]
+      lg:pt-[0rem] 
+      md:pt-[0]
       sm:pt-[0rem]
       ">
         <h1 className="Namepro text-[white] text-[5.5rem] uppercase font-semibold 
@@ -101,7 +103,7 @@ export default function App() {
           }}
         >
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg2} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
@@ -111,7 +113,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg3} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
@@ -121,7 +123,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg4} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
@@ -131,7 +133,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg5} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
@@ -141,7 +143,7 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div classNName="swiper-slide">
                 <img src={pbg6} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
@@ -151,42 +153,41 @@ export default function App() {
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg7} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
-                  Night knight
+                   mension
                 </figcaption>
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg8} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
-                  glowing forest
+                   magic 
                 </figcaption>
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg9} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
-                  flying wolf
+                   wolf
                 </figcaption>
               </figure>
             </div>
           </SwiperSlide>
           <SwiperSlide data-swiper-parallax="-300">
-            <div class="swiper-slide">
+            <div className="swiper-slide">
                 <img src={pbg10} alt="Marbella, Spain" />
               <figure>
                 <figcaption>
-                  
-                  sky mension
+                  house
                 </figcaption>
               </figure>
             </div>

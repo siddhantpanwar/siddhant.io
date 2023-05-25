@@ -45,7 +45,7 @@ const Navbar = () => {
       className="flex flex-col justify-between w-[10rem]
         v:w-[100vw] v:flex v:justify-center v:pt-[2rem] v:px-[2rem]
     sm:w-[100vw] sm:flex sm:justify-center sm:pt-[2rem] sm:px-[2rem]
-     md:w-[100vw] md:flex md:justify-center md:pt-[2rem] md:px-[2rem] "
+     md:w-[100vw] md:flex md:justify-center md:pt-[2rem] md:px-[3rem] "
     >
       <div
         className="flex pt-[4rem] justify-center items-center v:justify-between v:pt-[0]

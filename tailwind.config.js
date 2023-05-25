@@ -10,8 +10,8 @@ module.exports = {
       screens: {
         // 'v':{'min' : '20rem', 'max' : '640px'},
         'v':{'min' : '310px', 'max' : '640px'},
-        'sm':{'min' : '641px', 'max' : '768px'},
-        'md':{'min' : '769px', 'max' : '1024px'},
+        'sm':{'min' : '641px', 'max' : '769px'},
+        'md':{'min' : '770px', 'max' : '1024px'},
         'lg':{'min' : '1025px', 'max' : '1280px'},
         'xl':{'min' : '1281px', 'max' : '1536px'},
         '2xl':{'min' : '1537px', 'max' : "4621px"},
