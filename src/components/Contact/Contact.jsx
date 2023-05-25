@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import Lottie from "lottie-react";
 import animationData from "./mailanimation.json";
+import { useForm, ValidationError } from '@formspree/react';
 import Sm from "./Sm";
-import axios from 'axios';
 
 function Contact() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const [state, handleSubmit] = useForm("mdovvdqb");
+
+
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+      
+
+  }
 
   const validateEmail = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -23,27 +31,6 @@ function Contact() {
       setErrors((prevState) => ({ ...prevState, email: "" }));
     }
   };
-
-  const [formData, setFormData] = useState({});
-  
-  const handleChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value
-    });
-  };
-  
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    axios.post('/', formData)
-      .then((response) => {
-        console.log('Form submitted successfully', response);
-      })
-      .catch((error) => {
-        console.error('Form submission error', error);
-      });
-  };
-  
 
   return (
     <div className="flex flex-col w-[100%] h-[100vh] justify-center items-center
@@ -134,9 +121,9 @@ function Contact() {
                 lg:text-[16px] lg:w-[auto] lg:text-center lg:leading-[0px] lg:tracking-[0px]
                 xl:text-[16px] xl:w-[auto] xl:text-center xl:leading-[0px] xl:tracking-[.5px]
                 2xl:text-[17px]  2xl:text-center 2xl:leading-[0px] 2xl:tracking-[0px]
-                
                 "
             >
+              {/* siddhant10054321@S */}
               I'm thrilled that you've taken the time to visit and explore my
               work. This page serves as a gateway for us to connect,
               collaborate, and discuss exciting opportunities. Whether you have
@@ -145,15 +132,14 @@ function Contact() {
             </span>
           </div>
           <form
-            onSubmit={submit}
-            name="contact v1"
+            onSubmit={handleSubmit}
+
             className="w-[80%] h-[60%] mt-[2rem] flex flex-col justify-center 
             xl:h-[60%] xl:mt-[1rem]
             lg:h-[55%] lg:mt-[1rem]
             md:h-[60%] md:mt-[1.5rem] md:w-[90%]
             sm:h-[70%] sm:mt-[2rem]
-            v:h-[65%] v:mt-[1rem] v:w-[85%] 
-          
+            v:h-[65%] v:mt-[1rem] v:w-[85%]
             "
           >
             <input type="hidden" name="form" value="contact v1"/>
@@ -161,37 +147,32 @@ function Contact() {
               className="flex gap-[1rem] justify-center
              items-center w-[100%] h-[40%] 
              v:flex-col 
-             
              "
             >
               <div className="w-[50%] v:w-[100%]">
                 <input
-                  type="text"
-                  id="username"
+                  type="username"
                   placeholder="Fullname"
-                  
                   name="username"
                   className="w-[100%] rounded-full  bg-[#000000]
                   shadow-[0px_0px_.9rem_inset_5px_] shadow-[#7950f2]
                   px-[1.5rem] py-2 h-[3.5rem]
                   "
                   value={username}
-                  onChange={handleChange}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div className="w-[50%] v:w-[100%]">
                 <input
                   type="email"
-                  id="email"
-                  onChange={handleChange}
-                  placeholder="Email"
                   name="email"
+                  placeholder="Email"
                   className={`w-[100%] px-[1.5rem] py-2 h-[3.5rem]
                   rounded-full bg-[#000000] shadow-[#7950f2]
                   shadow-[0px_0px_.9rem_inset_5px_] 
                     ${errors.email ? "shadow-[#ff1b1b]" : "shadow-[#7950f2]"}`}
                   value={email}
-                  
+                  onChange={(e) => setEmail(e.target.value)}
                   onBlur={validateEmail}
                 />
                 {errors.email && <p className="text-red-500">{errors.email}</p>}
@@ -213,11 +194,9 @@ function Contact() {
                  max-h-[80%] rounded-xl w-[96%]
                  xl:w-[100%] 
                  "
-                onChange={handleChange}
                 placeholder="Message"
-                value={message}
                 name="message"
-                
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div
@@ -228,7 +207,7 @@ function Contact() {
             "
             >
               <button
-                type="submit"
+                type="submit" disabled={state.submitting}
                 className="px-6 py-3 w-[80%] font-medium
                  text-white rounded-full hover:shadow-[#4bc6ff]
                   transition-all ease-in-out
